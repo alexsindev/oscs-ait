@@ -3,7 +3,9 @@
 ### Author's Note
 My ultimate goal here is to share most of the syllabus and homework problems
 that i have worked on and collected throughout all the coursework that i have
-done during my Master's in CS @ AIT.
+done during my Master's in CS @ AIT. This is a work-in-progress repo, the initial
+version is AI generate to give me a head start, and as time progresses i will be 
+including other relevant notes i can find into it.
 
 ### Legal Note
 I will not share the lecture notes or slides provided by the teaching / academic
