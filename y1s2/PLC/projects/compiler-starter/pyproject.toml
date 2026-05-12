@@ -1,0 +1,22 @@
+[project]
+name = "compiler-starter-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyside6>=6.10.2",
+    "sly",
+]
+
+[tool.uv.sources]
+sly = { git = "https://github.com/dabeaz/sly", branch = "master"}
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "pytest-dependency>=0.6.1",
+]
+
+[tool.uv]
+package = true

@@ -1,0 +1,85 @@
+version: "3.8"
+
+services:
+    # PostgreSQL Database - Internal only
+    db:
+        image: postgres:16
+        container_name: achievement-db
+        environment:
+            POSTGRES_USER: ${DATABASE_USER}
+            POSTGRES_PASSWORD: ${DATABASE_PASS}
+            POSTGRES_DB: ${DATABASE_DB}
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+            # Mount migrations directory - PostgreSQL will auto-run .sql files in /docker-entrypoint-initdb.d/
+            - ./migrations:/docker-entrypoint-initdb.d/migrations:ro
+        networks:
+            - achievement-network
+        restart: unless-stopped
+        healthcheck:
+            test:
+                [
+                    "CMD-SHELL",
+                    "pg_isready -U ${DATABASE_USER} -d ${DATABASE_DB}",
+                ]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+
+    # Backend API - Exposed to localhost for nginx proxy
+    backend:
+        image: locomoto0012/student_achievement_be:latest
+        container_name: achievement-backend
+        ports:
+            - "127.0.0.1:8000:8000" # Only accessible from localhost
+        environment:
+            DATABASE_USER: ${DATABASE_USER}
+            DATABASE_PASS: ${DATABASE_PASS}
+            DATABASE_HOST: db:5432
+            DATABASE_DB: ${DATABASE_DB}
+            UVICORN_HOST: 0.0.0.0
+            UVICORN_PORT: 8000
+            JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+            JWT_ALGORITHM: ${JWT_ALGORITHM}
+            ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES}
+            UPLOAD_DIRECTORY: /app/uploads
+            SEED_DEFAULT_USERS: ${SEED_DEFAULT_USERS:-false}
+        volumes:
+            # Mount host /uploads directory to container - CHANGE THIS PATH to your production VM path
+            - /uploads:/app/uploads
+        networks:
+            - achievement-network
+        depends_on:
+            db:
+                condition: service_healthy
+        restart: unless-stopped
+
+    # Frontend - Publicly accessible
+    frontend:
+        image: locomoto0012/student_achievement_fe:latest
+        container_name: achievement-frontend
+        ports:
+            - "8080:80"
+            - "8443:443" # If using SSL
+        environment:
+            # Backend API URL - accessed by user's browser through nginx
+            VITE_API_BASE_URL: https://web07.cs.ait.ac.th/achievement-api
+        networks:
+            - achievement-network
+        depends_on:
+            - backend
+        restart: unless-stopped
+        healthcheck:
+            test: ["CMD", "wget", "--spider", "-q", "http://localhost:80"]
+            interval: 30s
+            timeout: 3s
+            retries: 3
+            start_period: 20s
+
+volumes:
+    postgres_data:
+        driver: local
+
+networks:
+    achievement-network:
+        driver: bridge

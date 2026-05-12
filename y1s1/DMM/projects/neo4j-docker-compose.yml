@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  neo4j:
+    image: neo4j:latest # Or a specific version like neo4j:5.16.0
+    container_name: neo4j-standalone
+    ports:
+      - "7474:7474" # HTTP port for Neo4j Browser
+      - "7687:7687" # Bolt port for drivers
+    environment:
+      - NEO4J_AUTH=neo4j/password # Default username and password
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes # Required for Neo4j Enterprise Edition
+    volumes:
+      - ./data:/data # Persist data outside the container
+      - ./conf:/conf # Persist configuration
+      - ./logs:/logs # Persist logs
+      - ./plugins:/plugins # Persist plugins
+    restart: on-failure # Restart policy

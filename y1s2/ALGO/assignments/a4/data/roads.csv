@@ -1,0 +1,6 @@
+source,destination,weight
+A,B,4
+A,C,2
+C,B,1
+B,D,5
+C,D,8

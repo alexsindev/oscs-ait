@@ -1,0 +1,1 @@
+aws s3api create-multipart-upload --bucket <your-bucket-name> --key maintenance_events.csv

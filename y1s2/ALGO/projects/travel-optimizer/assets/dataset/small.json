@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Terminal 21",
+    "location": {
+      "lat": 13.810956767937096,
+      "lng": 100.56410847074586
+    },
+    "open_time": 564,
+    "close_time": 1311,
+    "duration": 102,
+    "fee": 12.71,
+    "preference": 0.2149,
+    "category": "Shopping"
+  },
+  {
+    "id": 2,
+    "name": "Terminal 21 1",
+    "location": {
+      "lat": 13.711888490445402,
+      "lng": 100.531525009409
+    },
+    "open_time": 559,
+    "close_time": 1287,
+    "duration": 91,
+    "fee": 21.58,
+    "preference": 0.764,
+    "category": "Shopping"
+  },
+  {
+    "id": 3,
+    "name": "National Museum",
+    "location": {
+      "lat": 13.727152791339153,
+      "lng": 100.5322698520361
+    },
+    "open_time": 550,
+    "close_time": 1048,
+    "duration": 80,
+    "fee": 9.97,
+    "preference": 0.8613,
+    "category": "Museum"
+  },
+  {
+    "id": 4,
+    "name": "Santiphap Park",
+    "location": {
+      "lat": 13.744431542683053,
+      "lng": 100.5081449029271
+    },
+    "open_time": 384,
+    "close_time": 1072,
+    "duration": 52,
+    "fee": 0.0,
+    "preference": 0.4151,
+    "category": "Park"
+  },
+  {
+    "id": 5,
+    "name": "Queen Sirikit Garden",
+    "location": {
+      "lat": 13.718363945403713,
+      "lng": 100.5214555281485
+    },
+    "open_time": 365,
+    "close_time": 1050,
+    "duration": 41,
+    "fee": 0.0,
+    "preference": 0.6015,
+    "category": "Park"
+  },
+  {
+    "id": 6,
+    "name": "Cultural Center",
+    "location": {
+      "lat": 13.7595201668224,
+      "lng": 100.48711529913301
+    },
+    "open_time": 538,
+    "close_time": 1008,
+    "duration": 86,
+    "fee": 7.02,
+    "preference": 0.4349,
+    "category": "Museum"
+  },
+  {
+    "id": 7,
+    "name": "Contemporary Art Museum",
+    "location": {
+      "lat": 13.72970708472761,
+      "lng": 100.52338784152336
+    },
+    "open_time": 553,
+    "close_time": 1006,
+    "duration": 51,
+    "fee": 0.0,
+    "preference": 0.5045,
+    "category": "Museum"
+  },
+  {
+    "id": 8,
+    "name": "Garden Bistro",
+    "location": {
+      "lat": 13.730184621307675,
+      "lng": 100.52591817418589
+    },
+    "open_time": 645,
+    "close_time": 1330,
+    "duration": 47,
+    "fee": 11.5,
+    "preference": 0.4765,
+    "category": "Restaurant"
+  },
+  {
+    "id": 9,
+    "name": "Bowling Alley",
+    "location": {
+      "lat": 13.750862733527008,
+      "lng": 100.55479573479985
+    },
+    "open_time": 703,
+    "close_time": 1344,
+    "duration": 173,
+    "fee": 18.42,
+    "preference": 0.5589,
+    "category": "Entertainment"
+  },
+  {
+    "id": 10,
+    "name": "Asiatique",
+    "location": {
+      "lat": 13.724992114536258,
+      "lng": 100.52736222574629
+    },
+    "open_time": 606,
+    "close_time": 1271,
+    "duration": 46,
+    "fee": 8.01,
+    "preference": 0.6543,
+    "category": "Shopping"
+  },
+  {
+    "id": 11,
+    "name": "Art Gallery",
+    "location": {
+      "lat": 13.785801360878917,
+      "lng": 100.54415285295266
+    },
+    "open_time": 534,
+    "close_time": 1023,
+    "duration": 51,
+    "fee": 10.13,
+    "preference": 0.3563,
+    "category": "Museum"
+  },
+  {
+    "id": 12,
+    "name": "Jazz Club",
+    "location": {
+      "lat": 13.724415444631225,
+      "lng": 100.49451253754812
+    },
+    "open_time": 708,
+    "close_time": 1381,
+    "duration": 118,
+    "fee": 0.0,
+    "preference": 0.5886,
+    "category": "Entertainment"
+  },
+  {
+    "id": 13,
+    "name": "Garden Bistro 1",
+    "location": {
+      "lat": 13.798893261737724,
+      "lng": 100.5765189487037
+    },
+    "open_time": 681,
+    "close_time": 1286,
+    "duration": 71,
+    "fee": 7.98,
+    "preference": 0.5233,
+    "category": "Restaurant"
+  },
+  {
+    "id": 14,
+    "name": "Wat Arun",
+    "location": {
+      "lat": 13.745574264491589,
+      "lng": 100.56645043153513
+    },
+    "open_time": 341,
+    "close_time": 1121,
+    "duration": 32,
+    "fee": 0.0,
+    "preference": 0.6112,
+    "category": "Landmark"
+  },
+  {
+    "id": 15,
+    "name": "History Museum",
+    "location": {
+      "lat": 13.724832590016367,
+      "lng": 100.52216887323
+    },
+    "open_time": 535,
+    "close_time": 1000,
+    "duration": 107,
+    "fee": 17.73,
+    "preference": 0.1656,
+    "category": "Museum"
+  }
+]

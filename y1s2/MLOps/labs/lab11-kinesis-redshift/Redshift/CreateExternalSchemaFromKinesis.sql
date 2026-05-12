@@ -1,0 +1,3 @@
+CREATE EXTERNAL SCHEMA kinesis_schema
+FROM KINESIS
+IAM_ROLE 'arn:aws:iam::321502925342:role/LabRole';

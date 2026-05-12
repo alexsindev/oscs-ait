@@ -1,0 +1,35 @@
+services:
+  mongodb:
+    image: mongo:6
+    restart: always
+    ports:
+      - "27777:27017" # hosts access via 27777
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    image: locomoto0012/fsad_final_exam_api:latest
+    restart: always
+    depends_on:
+      - mongodb
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongodb:27017/fullstack_demo
+      - PORT=3000
+    ports:
+      - "7777:3000"
+    command: ["npm", "start"]
+
+  frontend:
+    image: locomoto0012/fsad_final_exam_reactapp:latest
+    restart: always
+    depends_on:
+      - backend
+    environment:
+      # Replace this with actual server/aws PUBLIC IP
+      - VITE_API_URL=http://web07.cs.ait.ac.th:7777
+    ports:
+      - "6112:5173"
+    command: ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+volumes:
+  mongo_data:

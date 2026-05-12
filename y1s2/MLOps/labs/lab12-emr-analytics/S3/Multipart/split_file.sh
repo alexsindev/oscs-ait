@@ -1,0 +1,1 @@
+split -b 10M maintenance_events.csv part_

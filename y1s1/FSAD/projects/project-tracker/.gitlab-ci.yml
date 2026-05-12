@@ -1,0 +1,5 @@
+stages:
+  - build
+include:
+  - local: "backend/.gitlab-ci.yml"
+  - local: "reactApp/.gitlab-ci.yml"

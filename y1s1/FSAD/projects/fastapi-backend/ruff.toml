@@ -1,0 +1,25 @@
+select = ["ALL"]
+ignore = [
+    "D",      # docstring-related issues
+    "TC010",  # Invalid string member in `X | Y`-style union type
+    "ERA001", # Commented-out code
+    "TC001",  # Type-checking false positive for Pydantic .model_rebuild()
+]
+
+[per-file-ignores]
+"tests/*" = [
+    "S101",    # Allow use of assert statements in tests
+    "PLR2004", # Allow magic numbers in tests
+    "S105",    # Allow hardcoded passwords in tests
+    "RUF059",  # Unpacked variables not used in tests
+    "PLR0915", # Allow too statements in tests
+    "PLR0913", # Allow too many function arguments in tests
+]
+"__init__.py" = [
+    "F401", # Allow unused imports in __init__.py files
+    "I001", # Unsorted names in __init__.py files
+]
+"tests/conftest.py" = [
+    "PLR0912", # Allow complex code in test configuration files
+    "C901",    # Allow complex code in test configuration files
+]

@@ -1,0 +1,11 @@
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 1 --body part_aa --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 2 --body part_ab --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 3 --body part_ac --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 4 --body part_ad --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 5 --body part_ae --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 6 --body part_af --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 7 --body part_ag --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 8 --body part_ah --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 9 --body part_ai --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 10 --body part_aj --upload-id $UPLOAD_ID
+aws s3api upload-part --bucket <your-bucket-name> --key maintenance_events.csv --part-number 11 --body part_ak --upload-id $UPLOAD_ID

@@ -1,0 +1,1 @@
+wget -qO- https://media.githubusercontent.com/media/st125052/mlops/main/aircraft_maintenance.tar.gz | tar -xzvf -

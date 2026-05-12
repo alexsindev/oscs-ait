@@ -1,0 +1,1 @@
+SELECT * FROM telemetry_mv LIMIT 10;

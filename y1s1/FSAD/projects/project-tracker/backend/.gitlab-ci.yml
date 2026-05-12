@@ -1,0 +1,22 @@
+stages:
+  - build
+variables:
+  API_IMAGE: locomoto0012/fsad_final_exam_api
+  DOCKER_TLS_CERTDIR: ""
+api_build:
+  stage: build
+  image: docker:dind
+  services:
+    - docker:dind
+  before_script:
+    - echo "Building api"
+    - cd backend
+    - docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASSWORD"
+  script:
+    - docker build -t $API_IMAGE:latest .
+    - docker push $API_IMAGE:latest
+  only:
+    - main #run when changes on main branch only
+  tags:
+    - gitlab-org-docker
+

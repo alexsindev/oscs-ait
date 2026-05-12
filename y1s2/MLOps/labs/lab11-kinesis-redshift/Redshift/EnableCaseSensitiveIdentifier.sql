@@ -1,0 +1,1 @@
+SET enable_case_sensitive_identifier TO true;

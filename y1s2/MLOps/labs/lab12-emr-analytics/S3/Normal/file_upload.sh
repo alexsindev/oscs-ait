@@ -1,0 +1,1 @@
+aws s3 cp fleet_registry.csv s3://<your-bucket-name>/fleet_registry.csv

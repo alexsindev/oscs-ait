@@ -1,0 +1,22 @@
+stages:
+  - build
+variables:
+  REACT_APP_IMAGE: locomoto0012/fsad_final_exam_reactapp
+  DOCKER_TLS_CERTDIR: ""
+app_react_build:
+  stage: build
+  image: docker:dind
+  services:
+    - docker:dind
+  before_script:
+    - echo "Building app"
+    - cd reactApp
+    - docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASSWORD"
+  script:
+    - docker build -t $REACT_APP_IMAGE:latest .
+    - docker push $REACT_APP_IMAGE:latest
+  only:
+    - main #run when changes on main branch only
+  tags:
+    - gitlab-org-docker
+

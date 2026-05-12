@@ -1,0 +1,62 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "start app",
+            "type": "shell",
+            "command": "uv",
+            "args": [
+                "run",
+                "main.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/src/prop_evaluator"
+            }
+        },
+        {
+            "label": "start designer",
+            "type": "shell",
+            "command": "pyside6-designer",
+            "args": [
+                "components/main.ui"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/src/prop_evaluator"
+            }
+        },
+        {
+            "label": "compile designer",
+            "type": "shell",
+            "command": "pyside6-uic",
+            "args": [
+                "components/main.ui",
+                "-o",
+                "components/ui.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/src/prop_evaluator"
+            }
+        },
+        {
+            "label": "Install PySide6",
+            "type": "shell",
+            "command": "pip",
+            "args": [
+                "install",
+                "pyside6"
+            ],
+        },
+        {
+            "label": "Uninstall PySide6",
+            "type": "shell",
+            "command": "pip",
+            "args": [
+                "uninstall",
+                "-y",
+                "pyside6",
+                "PySide6_Addons",
+                "PySide6_Essentials"
+            ],
+        },
+    ]
+}

@@ -1,0 +1,1 @@
+aws s3 cp global_power_plants.csv s3://st126112-s3-04042026/

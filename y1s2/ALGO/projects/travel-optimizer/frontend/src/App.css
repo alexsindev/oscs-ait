@@ -1,0 +1,526 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-0: #060b14;
+  --bg-1: #0b1221;
+  --bg-2: #111827;
+  --bg-3: #1a2540;
+  --bg-4: #1e2d45;
+  --bg-5: #263348;
+  --border: #2d3f5a;
+  --border-subtle: #1a2540;
+  --text-1: #f1f5f9;
+  --text-2: #cbd5e1;
+  --text-3: #94a3b8;
+  --text-4: #64748b;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-glow: rgba(59,130,246,0.15);
+  --error-bg: rgba(220,38,38,0.12);
+  --error-border: rgba(220,38,38,0.35);
+  --error-text: #f87171;
+  --handle-h: 56px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-1);
+  color: var(--text-1);
+}
+
+/* ── Layout ──────────────────────────────────────────────────────────────── */
+
+.app {
+  display: flex;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────── */
+
+.sidebar {
+  width: 360px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-2);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: width 0.28s cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+  z-index: 10;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE / Edge */
+}
+
+.sidebar::-webkit-scrollbar { display: none; } /* Chrome / Safari */
+
+.sidebar--closed {
+  width: 0;
+  border-right: none;
+}
+
+.sidebar-inner {
+  width: 360px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.map-area {
+  flex: 1;
+  position: relative;
+  min-width: 0;
+}
+
+/* ── Desktop expand button (shown only when sidebar is collapsed) ─────────── */
+
+.sidebar-expand-btn {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2000;
+  width: 32px;
+  height: 56px;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  color: var(--text-2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 0 12px rgba(0,0,0,0.35);
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+.sidebar-expand-btn:hover {
+  background: var(--bg-5);
+  color: var(--text-1);
+  box-shadow: 3px 0 16px rgba(59,130,246,0.25);
+}
+
+/* ── Sidebar header ─────────────────────────────────────────────────────── */
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-1);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.sidebar-logo {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-title { font-size: 15px; font-weight: 700; color: var(--text-1); }
+.sidebar-sub   { font-size: 11px; color: var(--text-4); margin-top: 1px; }
+
+/* ── Generic icon button ─────────────────────────────────────────────────── */
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-3);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.icon-btn:hover { color: var(--text-1); background: var(--bg-4); }
+
+/* ── Form body ──────────────────────────────────────────────────────────── */
+
+.form-body {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-section { display: flex; flex-direction: column; gap: 8px; }
+
+.section-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-4);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hint { font-size: 11px; color: var(--text-4); }
+
+/* ── Coordinates ────────────────────────────────────────────────────────── */
+
+.coord-row { display: flex; gap: 8px; }
+
+.coord-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  overflow: hidden;
+  background: var(--bg-3);
+}
+
+.coord-tag {
+  padding: 0 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-4);
+  background: var(--bg-4);
+  border-right: 1px solid var(--border);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.coord-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 7px 8px;
+  font-size: 13px;
+  color: var(--text-1);
+  outline: none;
+  min-width: 0;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────────────── */
+
+.pick-btn {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1.5px dashed var(--border);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text-3);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.pick-btn:hover { background: var(--bg-4); color: var(--text-2); }
+.pick-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.pick-btn--active { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+
+.optimize-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: 0.01em;
+}
+
+.optimize-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+  box-shadow: 0 0 16px rgba(59,130,246,0.4);
+}
+
+.optimize-btn:disabled { background: #1e3a6e; color: #4d6fa8; cursor: not-allowed; }
+
+/* ── Select / radio ─────────────────────────────────────────────────────── */
+
+.form-select, .inline-select {
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: var(--text-1);
+  background: var(--bg-3);
+  outline: none;
+  cursor: pointer;
+}
+
+.form-select { width: 100%; }
+.form-select option, .inline-select option { background: var(--bg-3); color: var(--text-1); }
+
+.radio-group { display: flex; flex-direction: column; gap: 6px; }
+
+.radio-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: var(--bg-3);
+}
+
+.radio-card:hover { border-color: #4d7ac4; background: var(--bg-4); }
+.radio-card--active { border-color: var(--accent); background: var(--accent-glow); }
+.radio-title { font-size: 13px; font-weight: 600; color: var(--text-1); }
+.radio-desc  { font-size: 11px; color: var(--text-4); margin-top: 2px; }
+
+/* ── Inline field ───────────────────────────────────────────────────────── */
+
+.inline-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.inline-label { font-size: 13px; color: var(--text-2); flex-shrink: 0; }
+
+.inline-input {
+  width: 80px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 13px;
+  text-align: right;
+  background: var(--bg-3);
+  color: var(--text-1);
+  outline: none;
+}
+
+/* ── Dollar input ───────────────────────────────────────────────────────── */
+
+.dollar-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-3);
+  overflow: hidden;
+}
+
+.dollar-sign {
+  padding: 5px 7px;
+  font-size: 13px;
+  color: var(--text-4);
+  background: var(--bg-4);
+  border-right: 1px solid var(--border);
+}
+
+.dollar-inner {
+  width: 80px;
+  border: none;
+  background: transparent;
+  padding: 5px 8px;
+  font-size: 13px;
+  color: var(--text-1);
+  outline: none;
+  text-align: right;
+}
+
+/* ── Slider ─────────────────────────────────────────────────────────────── */
+
+.slider-field { display: flex; flex-direction: column; gap: 4px; }
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-value { font-size: 13px; font-weight: 600; color: var(--accent); }
+
+.slider {
+  width: 100%;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.slider-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--text-4);
+}
+
+/* ── Error ──────────────────────────────────────────────────────────────── */
+
+.error-box {
+  background: var(--error-bg);
+  border: 1px solid var(--error-border);
+  color: var(--error-text);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+/* ── Spinner / spin animation ───────────────────────────────────────────── */
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(255,255,255,0.25);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+.spin { animation: spin 1s linear infinite; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Result section ─────────────────────────────────────────────────────── */
+
+.result-section {
+  padding-top: 4px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* ── Leaflet dark overrides ──────────────────────────────────────────────── */
+
+.leaflet-popup-content-wrapper {
+  background: var(--bg-3) !important;
+  color: var(--text-1) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.6) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.leaflet-popup-tip { background: var(--bg-3) !important; }
+.leaflet-popup-close-button { color: var(--text-3) !important; }
+.leaflet-popup-content { color: var(--text-1) !important; }
+
+.leaflet-control-attribution {
+  background: rgba(6,11,20,0.7) !important;
+  color: var(--text-4) !important;
+}
+
+.leaflet-control-attribution a { color: var(--text-3) !important; }
+
+.leaflet-control-scale-line {
+  background: rgba(6,11,20,0.7) !important;
+  color: var(--text-3) !important;
+  border-color: var(--text-4) !important;
+}
+
+.leaflet-bar a {
+  background: var(--bg-3) !important;
+  color: var(--text-1) !important;
+  border-color: var(--border) !important;
+}
+
+.leaflet-bar a:hover { background: var(--bg-5) !important; }
+
+/* ── Mobile ──────────────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .app { flex-direction: column; }
+
+  .map-area { flex: 1; min-height: 0; }
+
+  /* Sidebar becomes a fixed bottom sheet */
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    height: 78vh;
+    max-height: 78vh;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    border-radius: 16px 16px 0 0;
+    /* Default: only the handle is visible */
+    transform: translateY(calc(100% - var(--handle-h)));
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    z-index: 200;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* When dragging, disable transition for instant tracking */
+  .sidebar--dragging {
+    transition: none !important;
+  }
+
+  /* Fully open */
+  .sidebar--open-mobile {
+    transform: translateY(0);
+  }
+
+  /* Hide desktop toggle on mobile */
+  .sidebar-toggle { display: none; }
+
+  /* Make header sticky inside the scrollable sidebar */
+  .sidebar-header { position: sticky; top: var(--handle-h); }
+
+  .form-body { padding: 12px 16px; gap: 14px; }
+}
+
+/* ── Mobile swipe handle ─────────────────────────────────────────────────── */
+
+/* Hidden on desktop */
+.sidebar-handle { display: none; }
+.sidebar-backdrop { display: none; }
+
+@media (max-width: 767px) {
+  .sidebar-handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: var(--handle-h);
+    flex-shrink: 0;
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .sidebar-handle:active { cursor: grabbing; }
+
+  .grip-icon { color: var(--text-4); }
+
+  .handle-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-3);
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 199;
+    backdrop-filter: blur(2px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar { height: 85vh; max-height: 85vh; }
+}

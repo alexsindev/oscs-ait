@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "name": "Democracy Monument",
+    "location": {
+      "lat": 13.881828302478528,
+      "lng": 100.49376009536256
+    },
+    "open_time": 506,
+    "close_time": 794,
+    "duration": 76,
+    "fee": 0.0,
+    "preference": 0.6485,
+    "category": "Landmark"
+  },
+  {
+    "id": 2,
+    "name": "Contemporary Art Museum",
+    "location": {
+      "lat": 13.745276387849177,
+      "lng": 100.63966675161258
+    },
+    "open_time": 527,
+    "close_time": 795,
+    "duration": 79,
+    "fee": 6.86,
+    "preference": 0.6416,
+    "category": "Museum"
+  },
+  {
+    "id": 3,
+    "name": "Victory Monument",
+    "location": {
+      "lat": 13.640914422733577,
+      "lng": 100.51733524803205
+    },
+    "open_time": 507,
+    "close_time": 798,
+    "duration": 60,
+    "fee": 0.0,
+    "preference": 0.7237,
+    "category": "Landmark"
+  },
+  {
+    "id": 4,
+    "name": "Democracy Monument 1",
+    "location": {
+      "lat": 13.877561509901692,
+      "lng": 100.49692654362558
+    },
+    "open_time": 535,
+    "close_time": 778,
+    "duration": 72,
+    "fee": 0.0,
+    "preference": 0.8448,
+    "category": "Landmark"
+  },
+  {
+    "id": 5,
+    "name": "Vimanmek Mansion",
+    "location": {
+      "lat": 13.743258925609831,
+      "lng": 100.63100694175627
+    },
+    "open_time": 506,
+    "close_time": 789,
+    "duration": 66,
+    "fee": 0.0,
+    "preference": 0.7158,
+    "category": "Landmark"
+  },
+  {
+    "id": 6,
+    "name": "Contemporary Art Museum 1",
+    "location": {
+      "lat": 13.64878772935503,
+      "lng": 100.50125706508086
+    },
+    "open_time": 496,
+    "close_time": 777,
+    "duration": 59,
+    "fee": 5.38,
+    "preference": 0.7277,
+    "category": "Museum"
+  },
+  {
+    "id": 7,
+    "name": "Art Gallery",
+    "location": {
+      "lat": 13.88097651839063,
+      "lng": 100.50351733398816
+    },
+    "open_time": 485,
+    "close_time": 745,
+    "duration": 75,
+    "fee": 0.0,
+    "preference": 0.723,
+    "category": "Museum"
+  },
+  {
+    "id": 8,
+    "name": "National Museum",
+    "location": {
+      "lat": 13.734483286283991,
+      "lng": 100.63798296446433
+    },
+    "open_time": 535,
+    "close_time": 771,
+    "duration": 73,
+    "fee": 16.33,
+    "preference": 0.7254,
+    "category": "Museum"
+  },
+  {
+    "id": 9,
+    "name": "Victory Monument 1",
+    "location": {
+      "lat": 13.64270957263601,
+      "lng": 100.50282496212647
+    },
+    "open_time": 522,
+    "close_time": 774,
+    "duration": 59,
+    "fee": 5.59,
+    "preference": 0.787,
+    "category": "Landmark"
+  },
+  {
+    "id": 10,
+    "name": "Democracy Monument 2",
+    "location": {
+      "lat": 13.869875993396253,
+      "lng": 100.49131732516547
+    },
+    "open_time": 500,
+    "close_time": 720,
+    "duration": 53,
+    "fee": 14.9,
+    "preference": 0.7574,
+    "category": "Landmark"
+  },
+  {
+    "id": 11,
+    "name": "Contemporary Art Museum 2",
+    "location": {
+      "lat": 13.738767374652795,
+      "lng": 100.62929986767054
+    },
+    "open_time": 507,
+    "close_time": 799,
+    "duration": 75,
+    "fee": 0.0,
+    "preference": 0.8486,
+    "category": "Museum"
+  },
+  {
+    "id": 12,
+    "name": "Wat Pho",
+    "location": {
+      "lat": 13.641823043745617,
+      "lng": 100.51139605726813
+    },
+    "open_time": 498,
+    "close_time": 765,
+    "duration": 84,
+    "fee": 4.44,
+    "preference": 0.5521,
+    "category": "Landmark"
+  },
+  {
+    "id": 13,
+    "name": "Contemporary Art Museum 3",
+    "location": {
+      "lat": 13.888779817347318,
+      "lng": 100.49286742167406
+    },
+    "open_time": 528,
+    "close_time": 753,
+    "duration": 54,
+    "fee": 8.9,
+    "preference": 0.9395,
+    "category": "Museum"
+  },
+  {
+    "id": 14,
+    "name": "National Museum 1",
+    "location": {
+      "lat": 13.745028759407367,
+      "lng": 100.64698038535016
+    },
+    "open_time": 520,
+    "close_time": 774,
+    "duration": 70,
+    "fee": 11.05,
+    "preference": 0.8163,
+    "category": "Museum"
+  },
+  {
+    "id": 15,
+    "name": "Vimanmek Mansion 1",
+    "location": {
+      "lat": 13.651395881384726,
+      "lng": 100.51094229140467
+    },
+    "open_time": 513,
+    "close_time": 735,
+    "duration": 53,
+    "fee": 0.0,
+    "preference": 0.6424,
+    "category": "Landmark"
+  },
+  {
+    "id": 16,
+    "name": "Golden Mount",
+    "location": {
+      "lat": 13.885896437066139,
+      "lng": 100.49700422640876
+    },
+    "open_time": 539,
+    "close_time": 769,
+    "duration": 53,
+    "fee": 9.31,
+    "preference": 0.8052,
+    "category": "Landmark"
+  },
+  {
+    "id": 17,
+    "name": "Wat Arun",
+    "location": {
+      "lat": 13.739060172614051,
+      "lng": 100.63475542484319
+    },
+    "open_time": 540,
+    "close_time": 835,
+    "duration": 70,
+    "fee": 0.0,
+    "preference": 0.5671,
+    "category": "Landmark"
+  },
+  {
+    "id": 18,
+    "name": "Wat Pho 1",
+    "location": {
+      "lat": 13.64428817004334,
+      "lng": 100.51171495683762
+    },
+    "open_time": 508,
+    "close_time": 746,
+    "duration": 68,
+    "fee": 9.35,
+    "preference": 0.7471,
+    "category": "Landmark"
+  },
+  {
+    "id": 19,
+    "name": "Cultural Center",
+    "location": {
+      "lat": 13.889905567593388,
+      "lng": 100.5103419943247
+    },
+    "open_time": 534,
+    "close_time": 757,
+    "duration": 60,
+    "fee": 17.87,
+    "preference": 0.7609,
+    "category": "Museum"
+  },
+  {
+    "id": 20,
+    "name": "Vimanmek Mansion 2",
+    "location": {
+      "lat": 13.739019342608852,
+      "lng": 100.6370254472928
+    },
+    "open_time": 490,
+    "close_time": 720,
+    "duration": 66,
+    "fee": 5.07,
+    "preference": 0.8948,
+    "category": "Landmark"
+  },
+  {
+    "id": 21,
+    "name": "National Museum 2",
+    "location": {
+      "lat": 13.650495415254136,
+      "lng": 100.50204164369357
+    },
+    "open_time": 530,
+    "close_time": 751,
+    "duration": 59,
+    "fee": 11.31,
+    "preference": 0.8008,
+    "category": "Museum"
+  },
+  {
+    "id": 22,
+    "name": "Vimanmek Mansion 3",
+    "location": {
+      "lat": 13.881454980747629,
+      "lng": 100.50105944015073
+    },
+    "open_time": 531,
+    "close_time": 750,
+    "duration": 66,
+    "fee": 19.43,
+    "preference": 0.8833,
+    "category": "Landmark"
+  },
+  {
+    "id": 23,
+    "name": "Democracy Monument 3",
+    "location": {
+      "lat": 13.741893630021542,
+      "lng": 100.64223512172534
+    },
+    "open_time": 497,
+    "close_time": 782,
+    "duration": 57,
+    "fee": 0.0,
+    "preference": 0.8013,
+    "category": "Landmark"
+  },
+  {
+    "id": 24,
+    "name": "Cultural Center 1",
+    "location": {
+      "lat": 13.644434424674484,
+      "lng": 100.49945362965187
+    },
+    "open_time": 496,
+    "close_time": 747,
+    "duration": 91,
+    "fee": 0.0,
+    "preference": 0.2305,
+    "category": "Museum"
+  },
+  {
+    "id": 25,
+    "name": "Grand Palace",
+    "location": {
+      "lat": 13.882049333305645,
+      "lng": 100.51037218586643
+    },
+    "open_time": 499,
+    "close_time": 737,
+    "duration": 62,
+    "fee": 5.81,
+    "preference": 0.8971,
+    "category": "Landmark"
+  },
+  {
+    "id": 26,
+    "name": "Art Gallery 1",
+    "location": {
+      "lat": 13.741393019337758,
+      "lng": 100.63166803668709
+    },
+    "open_time": 506,
+    "close_time": 769,
+    "duration": 77,
+    "fee": 8.41,
+    "preference": 0.8419,
+    "category": "Museum"
+  },
+  {
+    "id": 27,
+    "name": "Grand Palace 1",
+    "location": {
+      "lat": 13.661884503179587,
+      "lng": 100.5225590098536
+    },
+    "open_time": 519,
+    "close_time": 780,
+    "duration": 70,
+    "fee": 0.0,
+    "preference": 0.5665,
+    "category": "Landmark"
+  },
+  {
+    "id": 28,
+    "name": "Vimanmek Mansion 4",
+    "location": {
+      "lat": 13.88556463088935,
+      "lng": 100.50272652202929
+    },
+    "open_time": 494,
+    "close_time": 793,
+    "duration": 59,
+    "fee": 13.92,
+    "preference": 0.749,
+    "category": "Landmark"
+  },
+  {
+    "id": 29,
+    "name": "Golden Mount 1",
+    "location": {
+      "lat": 13.724600049354413,
+      "lng": 100.63357889841295
+    },
+    "open_time": 521,
+    "close_time": 789,
+    "duration": 69,
+    "fee": 0.0,
+    "preference": 0.264,
+    "category": "Landmark"
+  },
+  {
+    "id": 30,
+    "name": "Heritage House",
+    "location": {
+      "lat": 13.643028848661261,
+      "lng": 100.50963205392503
+    },
+    "open_time": 491,
+    "close_time": 763,
+    "duration": 61,
+    "fee": 18.58,
+    "preference": 0.805,
+    "category": "Museum"
+  },
+  {
+    "id": 31,
+    "name": "Grand Palace 2",
+    "location": {
+      "lat": 13.884967929060783,
+      "lng": 100.49822057427879
+    },
+    "open_time": 526,
+    "close_time": 793,
+    "duration": 57,
+    "fee": 6.44,
+    "preference": 0.7888,
+    "category": "Landmark"
+  },
+  {
+    "id": 32,
+    "name": "History Museum",
+    "location": {
+      "lat": 13.750923876945881,
+      "lng": 100.63938464814683
+    },
+    "open_time": 511,
+    "close_time": 806,
+    "duration": 64,
+    "fee": 16.62,
+    "preference": 0.9051,
+    "category": "Museum"
+  },
+  {
+    "id": 33,
+    "name": "Democracy Monument 4",
+    "location": {
+      "lat": 13.637700639103713,
+      "lng": 100.50597315833562
+    },
+    "open_time": 511,
+    "close_time": 777,
+    "duration": 57,
+    "fee": 12.73,
+    "preference": 0.4172,
+    "category": "Landmark"
+  },
+  {
+    "id": 34,
+    "name": "Golden Mount 2",
+    "location": {
+      "lat": 13.867620570339172,
+      "lng": 100.49645337944885
+    },
+    "open_time": 531,
+    "close_time": 751,
+    "duration": 46,
+    "fee": 0.0,
+    "preference": 0.8421,
+    "category": "Landmark"
+  },
+  {
+    "id": 35,
+    "name": "Heritage House 1",
+    "location": {
+      "lat": 13.741397268120823,
+      "lng": 100.6364064053562
+    },
+    "open_time": 518,
+    "close_time": 752,
+    "duration": 55,
+    "fee": 5.68,
+    "preference": 0.8966,
+    "category": "Museum"
+  },
+  {
+    "id": 36,
+    "name": "Victory Monument 2",
+    "location": {
+      "lat": 13.640538470627124,
+      "lng": 100.50506649989626
+    },
+    "open_time": 502,
+    "close_time": 783,
+    "duration": 75,
+    "fee": 19.77,
+    "preference": 0.7312,
+    "category": "Landmark"
+  },
+  {
+    "id": 37,
+    "name": "Wat Arun 1",
+    "location": {
+      "lat": 13.867978866247602,
+      "lng": 100.5096255261691
+    },
+    "open_time": 481,
+    "close_time": 753,
+    "duration": 66,
+    "fee": 17.03,
+    "preference": 0.7454,
+    "category": "Landmark"
+  },
+  {
+    "id": 38,
+    "name": "Wat Arun 2",
+    "location": {
+      "lat": 13.741657645075971,
+      "lng": 100.62652340469666
+    },
+    "open_time": 503,
+    "close_time": 803,
+    "duration": 66,
+    "fee": 0.0,
+    "preference": 0.7558,
+    "category": "Landmark"
+  },
+  {
+    "id": 39,
+    "name": "National Museum 3",
+    "location": {
+      "lat": 13.648180388233609,
+      "lng": 100.50577196042279
+    },
+    "open_time": 507,
+    "close_time": 730,
+    "duration": 67,
+    "fee": 0.0,
+    "preference": 0.7417,
+    "category": "Museum"
+  },
+  {
+    "id": 40,
+    "name": "Vimanmek Mansion 5",
+    "location": {
+      "lat": 13.868041637773675,
+      "lng": 100.49222116603156
+    },
+    "open_time": 538,
+    "close_time": 769,
+    "duration": 45,
+    "fee": 0.0,
+    "preference": 0.77,
+    "category": "Landmark"
+  },
+  {
+    "id": 41,
+    "name": "Comedy Club",
+    "location": {
+      "lat": 13.755608620652739,
+      "lng": 100.5153358588957
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 61,
+    "fee": 4.48,
+    "preference": 0.4139,
+    "category": "Entertainment"
+  },
+  {
+    "id": 42,
+    "name": "Icon Siam",
+    "location": {
+      "lat": 13.760228274682598,
+      "lng": 100.49139456060843
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 65,
+    "fee": 13.35,
+    "preference": 0.7529,
+    "category": "Shopping"
+  },
+  {
+    "id": 43,
+    "name": "Santiphap Park",
+    "location": {
+      "lat": 13.760578904406948,
+      "lng": 100.49990755659064
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 63,
+    "fee": 0.0,
+    "preference": 0.8824,
+    "category": "Park"
+  },
+  {
+    "id": 44,
+    "name": "Bang Krachao",
+    "location": {
+      "lat": 13.760133771131825,
+      "lng": 100.50048862469797
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 63,
+    "fee": 3.91,
+    "preference": 0.44,
+    "category": "Park"
+  },
+  {
+    "id": 45,
+    "name": "Thai Kitchen",
+    "location": {
+      "lat": 13.75604137152046,
+      "lng": 100.50493908211457
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 52,
+    "fee": 11.41,
+    "preference": 0.4637,
+    "category": "Restaurant"
+  },
+  {
+    "id": 46,
+    "name": "Icon Siam 1",
+    "location": {
+      "lat": 13.75977708452451,
+      "lng": 100.4977292176365
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 57,
+    "fee": 7.06,
+    "preference": 0.7175,
+    "category": "Shopping"
+  },
+  {
+    "id": 47,
+    "name": "MBK Center",
+    "location": {
+      "lat": 13.758530797426252,
+      "lng": 100.51613214506607
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 61,
+    "fee": 10.06,
+    "preference": 0.4939,
+    "category": "Shopping"
+  },
+  {
+    "id": 48,
+    "name": "Muay Thai Stadium",
+    "location": {
+      "lat": 13.762955852363135,
+      "lng": 100.51265287004446
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 64,
+    "fee": 7.35,
+    "preference": 0.8259,
+    "category": "Entertainment"
+  },
+  {
+    "id": 49,
+    "name": "Suan Rot Fai",
+    "location": {
+      "lat": 13.741349391697728,
+      "lng": 100.51543862229815
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 69,
+    "fee": 3.91,
+    "preference": 0.8503,
+    "category": "Park"
+  },
+  {
+    "id": 50,
+    "name": "Rooftop Bar",
+    "location": {
+      "lat": 13.757294774730157,
+      "lng": 100.5009389934818
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 68,
+    "fee": 4.62,
+    "preference": 0.2838,
+    "category": "Entertainment"
+  },
+  {
+    "id": 51,
+    "name": "Riverside Cafe",
+    "location": {
+      "lat": 13.769657843363202,
+      "lng": 100.49988656013305
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 74,
+    "fee": 3.28,
+    "preference": 0.3905,
+    "category": "Restaurant"
+  },
+  {
+    "id": 52,
+    "name": "Bang Krachao 1",
+    "location": {
+      "lat": 13.76082333950643,
+      "lng": 100.4861424092782
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 66,
+    "fee": 11.38,
+    "preference": 0.4917,
+    "category": "Park"
+  },
+  {
+    "id": 53,
+    "name": "Icon Siam 2",
+    "location": {
+      "lat": 13.754507733745502,
+      "lng": 100.49926622431052
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 58,
+    "fee": 0.0,
+    "preference": 0.3449,
+    "category": "Shopping"
+  },
+  {
+    "id": 54,
+    "name": "Platinum Mall",
+    "location": {
+      "lat": 13.77665073302731,
+      "lng": 100.50092905828947
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 57,
+    "fee": 15.6,
+    "preference": 0.4796,
+    "category": "Shopping"
+  },
+  {
+    "id": 55,
+    "name": "Icon Siam 3",
+    "location": {
+      "lat": 13.759642951284977,
+      "lng": 100.50231142058553
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 52,
+    "fee": 5.07,
+    "preference": 0.4789,
+    "category": "Shopping"
+  },
+  {
+    "id": 56,
+    "name": "Muay Thai Stadium 1",
+    "location": {
+      "lat": 13.758920358120744,
+      "lng": 100.49280305213513
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 62,
+    "fee": 11.93,
+    "preference": 0.6667,
+    "category": "Entertainment"
+  },
+  {
+    "id": 57,
+    "name": "Queen Sirikit Garden",
+    "location": {
+      "lat": 13.753362210798478,
+      "lng": 100.49107866978574
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 67,
+    "fee": 9.04,
+    "preference": 0.4248,
+    "category": "Park"
+  },
+  {
+    "id": 58,
+    "name": "Night Market Grill",
+    "location": {
+      "lat": 13.739782408518208,
+      "lng": 100.48898930793155
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 56,
+    "fee": 17.77,
+    "preference": 0.5354,
+    "category": "Restaurant"
+  },
+  {
+    "id": 59,
+    "name": "Queen Sirikit Garden 1",
+    "location": {
+      "lat": 13.75002412463563,
+      "lng": 100.49543384716898
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 65,
+    "fee": 2.59,
+    "preference": 0.497,
+    "category": "Park"
+  },
+  {
+    "id": 60,
+    "name": "Platinum Mall 1",
+    "location": {
+      "lat": 13.748234010956926,
+      "lng": 100.4889736534974
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 67,
+    "fee": 0.0,
+    "preference": 0.5652,
+    "category": "Shopping"
+  },
+  {
+    "id": 61,
+    "name": "Garden Bistro",
+    "location": {
+      "lat": 13.750103340658713,
+      "lng": 100.506511362934
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 55,
+    "fee": 12.75,
+    "preference": 0.2434,
+    "category": "Restaurant"
+  },
+  {
+    "id": 62,
+    "name": "Jazz Club",
+    "location": {
+      "lat": 13.75319516023804,
+      "lng": 100.4989377705016
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 58,
+    "fee": 0.0,
+    "preference": 0.8453,
+    "category": "Entertainment"
+  },
+  {
+    "id": 63,
+    "name": "Siam Paragon",
+    "location": {
+      "lat": 13.758019603324371,
+      "lng": 100.49842674837932
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 59,
+    "fee": 17.96,
+    "preference": 0.3704,
+    "category": "Shopping"
+  },
+  {
+    "id": 64,
+    "name": "Escape Room Bangkok",
+    "location": {
+      "lat": 13.772978876111194,
+      "lng": 100.49076259302218
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 66,
+    "fee": 0.0,
+    "preference": 0.3022,
+    "category": "Entertainment"
+  },
+  {
+    "id": 65,
+    "name": "Icon Siam 4",
+    "location": {
+      "lat": 13.756124371735226,
+      "lng": 100.49277576905207
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 57,
+    "fee": 5.76,
+    "preference": 0.4173,
+    "category": "Shopping"
+  },
+  {
+    "id": 66,
+    "name": "Asiatique",
+    "location": {
+      "lat": 13.749161251759634,
+      "lng": 100.48863169788942
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 68,
+    "fee": 0.0,
+    "preference": 0.756,
+    "category": "Shopping"
+  },
+  {
+    "id": 67,
+    "name": "Benjakitti Park",
+    "location": {
+      "lat": 13.762550852012481,
+      "lng": 100.51431725008565
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 55,
+    "fee": 16.44,
+    "preference": 0.4093,
+    "category": "Park"
+  },
+  {
+    "id": 68,
+    "name": "JJ Market",
+    "location": {
+      "lat": 13.759440772238698,
+      "lng": 100.49934238499988
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 70,
+    "fee": 3.65,
+    "preference": 0.631,
+    "category": "Shopping"
+  },
+  {
+    "id": 69,
+    "name": "Chatuchak Market",
+    "location": {
+      "lat": 13.767429658916603,
+      "lng": 100.49934939348809
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 50,
+    "fee": 2.97,
+    "preference": 0.3626,
+    "category": "Shopping"
+  },
+  {
+    "id": 70,
+    "name": "Thai Kitchen 1",
+    "location": {
+      "lat": 13.763316636480894,
+      "lng": 100.4914492188596
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 60,
+    "fee": 9.83,
+    "preference": 0.3985,
+    "category": "Restaurant"
+  },
+  {
+    "id": 71,
+    "name": "Chatuchak Park",
+    "location": {
+      "lat": 13.767580188573493,
+      "lng": 100.47899262154628
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 45,
+    "fee": 5.65,
+    "preference": 0.7786,
+    "category": "Park"
+  },
+  {
+    "id": 72,
+    "name": "Riverside Cafe 1",
+    "location": {
+      "lat": 13.76178738818864,
+      "lng": 100.49992329009072
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 63,
+    "fee": 0.0,
+    "preference": 0.8703,
+    "category": "Restaurant"
+  },
+  {
+    "id": 73,
+    "name": "Laser Tag Arena",
+    "location": {
+      "lat": 13.768177250932618,
+      "lng": 100.49159376980487
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 41,
+    "fee": 0.0,
+    "preference": 0.615,
+    "category": "Entertainment"
+  },
+  {
+    "id": 74,
+    "name": "Night Market Grill 1",
+    "location": {
+      "lat": 13.753307352961148,
+      "lng": 100.49164932094271
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 80,
+    "fee": 7.78,
+    "preference": 0.3604,
+    "category": "Restaurant"
+  },
+  {
+    "id": 75,
+    "name": "Benjakitti Park 1",
+    "location": {
+      "lat": 13.762653711428612,
+      "lng": 100.50920014236304
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 66,
+    "fee": 0.0,
+    "preference": 0.3929,
+    "category": "Park"
+  },
+  {
+    "id": 76,
+    "name": "Comedy Club 1",
+    "location": {
+      "lat": 13.769892206002956,
+      "lng": 100.50435213416856
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 74,
+    "fee": 0.0,
+    "preference": 0.5471,
+    "category": "Entertainment"
+  },
+  {
+    "id": 77,
+    "name": "Garden Bistro 1",
+    "location": {
+      "lat": 13.755788028881833,
+      "lng": 100.50100270436144
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 78,
+    "fee": 4.03,
+    "preference": 0.6394,
+    "category": "Restaurant"
+  },
+  {
+    "id": 78,
+    "name": "Lumpini Park",
+    "location": {
+      "lat": 13.743796844610769,
+      "lng": 100.50691221814547
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 64,
+    "fee": 2.29,
+    "preference": 0.5567,
+    "category": "Park"
+  },
+  {
+    "id": 79,
+    "name": "Thai Kitchen 2",
+    "location": {
+      "lat": 13.745463011726418,
+      "lng": 100.5052460490475
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 64,
+    "fee": 11.07,
+    "preference": 0.6108,
+    "category": "Restaurant"
+  },
+  {
+    "id": 80,
+    "name": "Seafood House",
+    "location": {
+      "lat": 13.7588288481497,
+      "lng": 100.4967604225859
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 54,
+    "fee": 8.32,
+    "preference": 0.7751,
+    "category": "Restaurant"
+  },
+  {
+    "id": 81,
+    "name": "Comedy Club 2",
+    "location": {
+      "lat": 13.744679204872657,
+      "lng": 100.4806334555103
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 41,
+    "fee": 8.06,
+    "preference": 0.3604,
+    "category": "Entertainment"
+  },
+  {
+    "id": 82,
+    "name": "Platinum Mall 2",
+    "location": {
+      "lat": 13.747356539539224,
+      "lng": 100.49853737994977
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 74,
+    "fee": 2.37,
+    "preference": 0.5646,
+    "category": "Shopping"
+  },
+  {
+    "id": 83,
+    "name": "Platinum Mall 3",
+    "location": {
+      "lat": 13.759954744726429,
+      "lng": 100.53358853679367
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 69,
+    "fee": 11.63,
+    "preference": 0.4044,
+    "category": "Shopping"
+  },
+  {
+    "id": 84,
+    "name": "Riverside Cafe 2",
+    "location": {
+      "lat": 13.759665831266053,
+      "lng": 100.50604965897436
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 41,
+    "fee": 5.9,
+    "preference": 0.3544,
+    "category": "Restaurant"
+  },
+  {
+    "id": 85,
+    "name": "Riverside Cafe 3",
+    "location": {
+      "lat": 13.742878248336291,
+      "lng": 100.49773056251227
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 54,
+    "fee": 2.72,
+    "preference": 0.4259,
+    "category": "Restaurant"
+  },
+  {
+    "id": 86,
+    "name": "Siam Paragon 1",
+    "location": {
+      "lat": 13.754090326822135,
+      "lng": 100.50076579886425
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 60,
+    "fee": 17.75,
+    "preference": 0.6062,
+    "category": "Shopping"
+  },
+  {
+    "id": 87,
+    "name": "Icon Siam 5",
+    "location": {
+      "lat": 13.751986605617605,
+      "lng": 100.4767830015584
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 43,
+    "fee": 10.68,
+    "preference": 0.5731,
+    "category": "Shopping"
+  },
+  {
+    "id": 88,
+    "name": "Garden Bistro 2",
+    "location": {
+      "lat": 13.761088755385204,
+      "lng": 100.48644357930074
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 64,
+    "fee": 14.36,
+    "preference": 0.4994,
+    "category": "Restaurant"
+  },
+  {
+    "id": 89,
+    "name": "Icon Siam 6",
+    "location": {
+      "lat": 13.756999195809948,
+      "lng": 100.49103754799681
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 52,
+    "fee": 9.2,
+    "preference": 0.3403,
+    "category": "Shopping"
+  },
+  {
+    "id": 90,
+    "name": "Icon Siam 7",
+    "location": {
+      "lat": 13.769934287120856,
+      "lng": 100.48299201572026
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 57,
+    "fee": 16.21,
+    "preference": 0.2746,
+    "category": "Shopping"
+  },
+  {
+    "id": 91,
+    "name": "Seafood House 1",
+    "location": {
+      "lat": 13.753977306700758,
+      "lng": 100.50255713287957
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 60,
+    "fee": 9.71,
+    "preference": 0.6757,
+    "category": "Restaurant"
+  },
+  {
+    "id": 92,
+    "name": "Muay Thai Stadium 2",
+    "location": {
+      "lat": 13.764959686384172,
+      "lng": 100.50391609732796
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 69,
+    "fee": 9.44,
+    "preference": 0.5663,
+    "category": "Entertainment"
+  },
+  {
+    "id": 93,
+    "name": "Queen Sirikit Garden 2",
+    "location": {
+      "lat": 13.719815871747851,
+      "lng": 100.48456536592595
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 65,
+    "fee": 7.46,
+    "preference": 0.5581,
+    "category": "Park"
+  },
+  {
+    "id": 94,
+    "name": "Seafood House 2",
+    "location": {
+      "lat": 13.772468743984986,
+      "lng": 100.50311027116194
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 50,
+    "fee": 2.04,
+    "preference": 0.4994,
+    "category": "Restaurant"
+  },
+  {
+    "id": 95,
+    "name": "Icon Siam 8",
+    "location": {
+      "lat": 13.753472042508523,
+      "lng": 100.50073818069377
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 62,
+    "fee": 7.11,
+    "preference": 0.4955,
+    "category": "Shopping"
+  },
+  {
+    "id": 96,
+    "name": "JJ Market 1",
+    "location": {
+      "lat": 13.740992847427432,
+      "lng": 100.50409481715464
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 67,
+    "fee": 2.64,
+    "preference": 0.4179,
+    "category": "Shopping"
+  },
+  {
+    "id": 97,
+    "name": "Santiphap Park 1",
+    "location": {
+      "lat": 13.771092745106742,
+      "lng": 100.519743700546
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 73,
+    "fee": 10.99,
+    "preference": 0.6492,
+    "category": "Park"
+  },
+  {
+    "id": 98,
+    "name": "Siam Paragon 2",
+    "location": {
+      "lat": 13.75215526934164,
+      "lng": 100.50813910377734
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 60,
+    "fee": 0.0,
+    "preference": 0.5545,
+    "category": "Shopping"
+  },
+  {
+    "id": 99,
+    "name": "Bang Krachao 2",
+    "location": {
+      "lat": 13.770723047911861,
+      "lng": 100.49679255256244
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 43,
+    "fee": 12.69,
+    "preference": 0.6363,
+    "category": "Park"
+  },
+  {
+    "id": 100,
+    "name": "JJ Market 2",
+    "location": {
+      "lat": 13.760398284573286,
+      "lng": 100.50796134668002
+    },
+    "open_time": 480,
+    "close_time": 1200,
+    "duration": 39,
+    "fee": 11.76,
+    "preference": 0.4395,
+    "category": "Shopping"
+  }
+]

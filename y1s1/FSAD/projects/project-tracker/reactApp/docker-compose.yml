@@ -1,0 +1,19 @@
+services:
+  mock_reactapp:
+    build: .
+    container_name: mock_reactapp
+    ports:
+      - "5173:5173"
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+
+      - type: volume
+        source: app-nodemodules
+        target: /app/node_modules
+        
+    command: npm run dev -- --host=0.0.0.0
+
+volumes:
+  app-nodemodules:

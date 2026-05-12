@@ -1,0 +1,2 @@
+--data_source s3://st126112-s3-26032026/maintenance_events.csv
+--output_uri s3://st126112-s3-26032026/output/
